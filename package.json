@@ -1,0 +1,29 @@
+{
+  "name": "gmail-imap-backend",
+  "version": "1.0.0",
+  "description": "Node.js backend to fetch and parse emails from specific senders via Gmail IMAP using Google App Passwords",
+  "type": "module",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js",
+    "check-mail": "node test_inbox.js",
+    "watch-mail": "node test_inbox.js --watch"
+  },
+  "keywords": [
+    "gmail",
+    "imap",
+    "email-parser",
+    "express",
+    "backend"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "imapflow": "^1.0.171",
+    "mailparser": "^3.7.2"
+  }
+}
